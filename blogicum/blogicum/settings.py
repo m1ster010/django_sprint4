@@ -23,8 +23,8 @@ LANGUAGE_CODE = "ru-RU"
 SECRET_KEY = "django-insecure-t*nx4bjl*^4(**gwvcx7y)#485r9cpzysk4x$bp7besz#+n@j_"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True # При False не рабоатет раздача статики.
-             #Никакие картинки не отображаются, даже логотипы
+DEBUG = True  # При False не рабоатет раздача статики.
+# Никакие картинки не отображаются, даже логотипы
 
 ALLOWED_HOSTS = [
     "localhost",
@@ -35,11 +35,11 @@ MEDIA_URL = "/media/"
 
 MEDIA_ROOT = BASE_DIR / "media"
 
-STATICFILES_DIRS = [BASE_DIR / 'static_dev']
+STATICFILES_DIRS = [BASE_DIR / "static_dev"]
 
-STATIC_URL = '/static/'
+STATIC_URL = "/static/"
 
-STATIC_ROOT = BASE_DIR / 'static'
+STATIC_ROOT = BASE_DIR / "static"
 # Application definition
 
 INSTALLED_APPS = [
@@ -64,7 +64,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-LOGIN_REDIRECT_URL = 'blog:index'
+LOGIN_REDIRECT_URL = "blog:index"
 
 ROOT_URLCONF = "blogicum.urls"
 TEMPLATES_DIR = BASE_DIR / "templates"
@@ -132,7 +132,6 @@ USE_TZ = True
 CSRF_FAILURE_VIEW = "pages.views.csrf_failure"
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-
 
 
 # Default primary key field type
